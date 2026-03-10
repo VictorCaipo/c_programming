@@ -17,7 +17,13 @@ int main(void){
     }
 
     mean = average(numbers);
-
+    /*
+    Cuando pasamos un array como argumento ocurre el arrays to pointer decay,
+    esto quiere decir que el array se convierte automaticamente en un puntero
+    a el primer elemento es decir:
+    numbers == &numbers[0]
+    */
+   
     printf("The average of these numbers is: %d\n",mean);
 
 }
